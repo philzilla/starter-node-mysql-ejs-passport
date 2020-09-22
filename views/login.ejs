@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <title>Signin Template · Bootstrap</title>
+
+
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <meta name="theme-color" content="#563d7c">
+
+  <!-- Custom styles for this template -->
+  <link href="/style.css" rel="stylesheet">
+</head>
+
+<body >
+
+  <div class="container">
+
+  <div class="col-md-6">
+    <h1></span> Se connecter</h1>
+
+    <% if (message.length > 0) { %>
+    <div class="alert alert-danger"><%= message %></div>
+    <% } %>
+
+    <!-- LOGIN FORM -->
+    <form action="/login" method="post">
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" class="form-control" name="email">
+      </div>
+      <div class="form-group">
+        <label>Password</label>
+        <input type="password" class="form-control" name="password">
+      </div>
+
+      <button type="submit" class="btn btn-success">Se connecter</button>
+    </form>
+
+    <hr>
+
+    <p>Vous n'avez pas de compte ?<a href="/signup"> Créer un compte</a></p>
+
+  </div>
+  </div>
+
+
+</body>
+
+</html>

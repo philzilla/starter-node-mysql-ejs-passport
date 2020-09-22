@@ -1,14 +1,22 @@
-<%- include('./partials/head')-%>
-<div class="container">
-  <div class="row">
-    <div class="col-md-12">
-      <h1>Starter NodeJS, MySQL et EJS.</h1>
-      <% if (message) {%>
-          <p><%= message %></p>
-        <%}
-          else {%> <p>Il n'ya pas de contenu</p> <%}
-      %>
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+<head>
+	<title>Node Authentication</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css"> <!-- load bootstrap css -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css"> <!-- load fontawesome -->
+	<style>
+		body 		{ padding-top:80px; }
+	</style>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron text-center">
+            <h1>Cours passportJS</h1>
+          
+            <a href="/login" class="btn btn-default"><span class="fa fa-user"></span> Se connecter</a>
+            <a href="/signup" class="btn btn-default"><span class="fa fa-user"></span> S'inscrire</a>
+        </div>
     </div>
-  </div>
-</div>
-  <%- include('./partials/footer')-%>
+</body>
+</html>
